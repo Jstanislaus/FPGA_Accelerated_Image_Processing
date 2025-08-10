@@ -1,0 +1,2 @@
+# FPGA_Accelerated_Image_Processing
+This project aims to develop FPGA software for real-time dinghy boat identification and boat number recording for a racing scenario. This will be achieved be developing current numberplate recognition software.
