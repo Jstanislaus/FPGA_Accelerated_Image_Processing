@@ -14,11 +14,11 @@ Camera --> FPGA (Greyscale --> Edge Detection --> Downsampling) --> CPU (ML Mode
 ✅ Convert RGB images to grayscale in simulation  
 
 ## Next Steps
-🔄 Implement binary thresholding  
-🔄 Add Sobel edge detection  
-🔄 Perform file size reduction (downsampling)  
-🔄 Deploy on hardware (Basys 3)  
-🔄 Integrate with ML classification + OCR
+Implement binary thresholding  
+Add Sobel edge detection  
+Perform file size reduction (downsampling)  
+Deploy on hardware (Basys 3)  
+Integrate with ML classification + OCR
 
 
 ## Getting Started
