@@ -37,5 +37,5 @@ Integrate with ML classification + OCR
 - Python (image file conversion)
 - TensorFlow Lite / OpenCV (ML model)
 
-## Tech Stack
+## Why This Matters
 Real-time image recognition in low-power systems needs speed and efficiency. FPGA preprocessing reduces the data load on the CPU, enabling faster and more reliable predictions in the field.
