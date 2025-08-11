@@ -24,6 +24,7 @@ module rgb_to_gray (
     input wire clk,
     input wire [17:0] addr,       // 8 bits each: R[23:16], G[15:8], B[7:0]
     output wire [7:0] gray,
+    output wire [7:0] binary,     // Thresholded output
     output reg[23:0] rgb      // Grayscale output
 );
     reg [23:0] mem [0:159999]; // 16 x 8-bit memory
@@ -43,6 +44,8 @@ module rgb_to_gray (
 
     assign weighted_sum = r * 8'd77 + g * 8'd150 + b * 8'd29;
     assign gray = weighted_sum[15:8];  // Divide by 256
+    parameter THRESHOLD = 8'd128;
+    assign binary = (gray > THRESHOLD) ? 8'd255 : 8'd0;
 
 endmodule
 

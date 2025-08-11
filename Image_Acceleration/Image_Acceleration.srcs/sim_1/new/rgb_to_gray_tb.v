@@ -26,12 +26,15 @@ module tb_rgb_to_gray;
     
     wire [23:0] rgb;
     wire [7:0] gray;
+    wire [7:0] binary;
     reg [17:0] addr;
+    
 
     rgb_to_gray uut (
         .clk(clk),
         .addr(addr),
         .gray(gray),
+        .binary(binary),
         .rgb(rgb)
     );
     
@@ -43,7 +46,7 @@ module tb_rgb_to_gray;
         #1;
         for (addr = 0; addr < 160000; addr = addr + 1) begin
             #10;  // Wait for data to settle
-            $fwrite(outfile, "%h\n", gray);
+            $fwrite(outfile, "%h\n", binary);
             $display("Addr = %d RGB = %h, Gray = %h", addr, rgb, gray);
         end
         $fclose(outfile);
