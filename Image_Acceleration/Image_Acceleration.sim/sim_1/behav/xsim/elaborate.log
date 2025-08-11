@@ -5,6 +5,11 @@ Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'addr' [C:/Users/Jacob/Documents/Projects/FPGA_Accelerated_Image_Processing/Image_Acceleration/Image_Acceleration.srcs/sim_1/new/rgb_to_gray_tb.v:33]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rgb_to_gray
+Compiling module xil_defaultlib.tb_rgb_to_gray
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rgb_to_gray_behav

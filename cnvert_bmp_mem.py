@@ -19,4 +19,4 @@ def bmp_to_mem(input_bmp, output_mem):
             mem_file.write(hex_pixel + "\n")
 
 # Example usage
-bmp_to_mem("Testimg.bmp", "output.mem")
+bmp_to_mem("minion.bmp", "output.mem")

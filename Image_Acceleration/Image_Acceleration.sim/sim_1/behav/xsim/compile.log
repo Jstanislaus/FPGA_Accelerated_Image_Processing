@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jacob/Documents/Projects/FPGA_Accelerated_Image_Processing/Image_Acceleration/Image_Acceleration.srcs/sources_1/new/rgb_to_gray.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb_to_gray
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jacob/Documents/Projects/FPGA_Accelerated_Image_Processing/Image_Acceleration/Image_Acceleration.srcs/sim_1/new/rgb_to_gray_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rgb_to_gray

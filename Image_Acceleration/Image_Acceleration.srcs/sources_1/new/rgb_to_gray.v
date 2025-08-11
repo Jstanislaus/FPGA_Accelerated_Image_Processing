@@ -22,11 +22,11 @@
 
 module rgb_to_gray (
     input wire clk,
-    input wire [7:0] addr,       // 8 bits each: R[23:16], G[15:8], B[7:0]
+    input wire [17:0] addr,       // 8 bits each: R[23:16], G[15:8], B[7:0]
     output wire [7:0] gray,
     output reg[23:0] rgb      // Grayscale output
 );
-    reg [23:0] mem [0:255]; // 16 x 8-bit memory
+    reg [23:0] mem [0:159999]; // 16 x 8-bit memory
 
     initial begin
         $readmemh("output.mem", mem); // Load memory file]);
